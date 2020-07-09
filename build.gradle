@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    google()
+}
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:5.3.1"
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    testImplementation "io.rest-assured:rest-assured:3.0.0"
+    testImplementation "org.apache.commons:commons-text:1.7"
+
+    testImplementation "javax.xml.bind:jaxb-api:2.3.1"
+    testImplementation "com.moandjiezana.toml:toml4j:0.7.2"
+}
+
+test {
+    useJUnitPlatform()
+}

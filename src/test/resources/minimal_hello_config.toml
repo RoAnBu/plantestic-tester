@@ -1,0 +1,9 @@
+[A]
+    username = 'Test'
+    password = 'password'
+    path = '/testA'
+
+[B]
+    username = 'Test'
+    password = 'password'
+    path = 'http://localhost:9001'
